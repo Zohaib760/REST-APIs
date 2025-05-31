@@ -1,0 +1,15 @@
+ List<Model> postList = [];  
+
+  Future<List<Model>> getPostApi () async{
+  final response = await http.get(Uri.parse("https://jsonplaceholder.typicode.com/posts"));
+   var data = jsonDecode(response.body.toString());
+  if (response.statusCode==200){
+    for(Map i in data){
+      postList.add(Model.fromJson(i));
+    }
+    return postList;
+  }
+  else{
+   return postList;
+  }
+}
