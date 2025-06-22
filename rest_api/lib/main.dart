@@ -1,12 +1,6 @@
-
-
-
-
 import 'package:flutter/material.dart';
-import 'package:rest_api/Models/example_three.dart';
-
-
-
+import 'package:rest_api/example_three.dart';
+import 'package:rest_api/sign_up_api.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,15 +14,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
- 
-
- 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ExampleThree(),
-    );
+       debugShowCheckedModeBanner: false,
+        home:SignUpApi());
   }
 }
-
