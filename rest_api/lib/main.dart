@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rest_api/example_three.dart';
 import 'package:rest_api/sign_up_api.dart';
+import 'package:rest_api/uploading_image.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +19,6 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
        debugShowCheckedModeBanner: false,
-        home:SignUpApi());
+        home:UploadingImage());
   }
 }
